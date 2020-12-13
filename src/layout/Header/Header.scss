@@ -1,0 +1,30 @@
+@import '../../sass/variables.scss';
+
+.header {
+    height: 60px;
+    background: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1rem;
+
+    &__links {
+        display: flex;
+        list-style-type: none;
+        
+        &-link {
+            margin-right: 1rem;
+            text-decoration: none;
+            color: $color-white;
+
+            &:active {
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.selected {
+    color: $color-black;
+    border-bottom: 2px solid $color-black;
+}
