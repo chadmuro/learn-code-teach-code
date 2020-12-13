@@ -1,0 +1,23 @@
+@import '../../../sass/variables.scss';
+
+.main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    justify-content: center;
+
+
+    @media (min-width: $bp-medium) {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    @media (min-width: $bp-large) {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    @media (min-width: $bp-xl) {
+        grid-template-columns: repeat(4, auto);
+    }
+
+}
