@@ -1,0 +1,9 @@
+@import '../../sass/variables.scss';
+
+.footer {
+    height: 60px;
+    background: $color-one;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
