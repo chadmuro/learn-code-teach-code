@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+button {
+    background: $color-one;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    margin-top: 1.5rem;
+    border: 1px solid $color-two;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
