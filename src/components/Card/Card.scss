@@ -5,6 +5,7 @@
     width: 300px;
     background: $color-two;
     border-radius: 10px;
+    cursor: pointer;
     
     
     &__image {
@@ -22,6 +23,7 @@
         height: 100px;
         align-items: center;
         color: $color-five;
+        padding: 0 10px;
         
         & h3 {
             text-decoration: underline;

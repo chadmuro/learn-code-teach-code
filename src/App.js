@@ -4,12 +4,14 @@ import Articles from './components/Articles/Articles';
 import Projects from './components/Projects/Projects';
 import Header from './layout/Header/Header';
 import Footer from './layout/Footer/Footer';
+import MediumContextProvider from './contexts/MediumContext';
 import './App.scss';
 
 const App = () => {
 	return (
 		<div className="App">
-			<Header />
+			<MediumContextProvider>
+				<Header />
 				<Switch>
 					<Route path="/projects">
 						<Projects />
@@ -21,7 +23,8 @@ const App = () => {
 						<Home />
 					</Route>
 				</Switch>
-			<Footer />
+				<Footer />
+			</MediumContextProvider>
 		</div>
 	);
 }

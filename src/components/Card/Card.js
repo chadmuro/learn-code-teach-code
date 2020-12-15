@@ -1,16 +1,19 @@
 import React from 'react';
 import './Card.scss';
 
-import card from '../../img/lctc-hero.jpg';
+const Card = ({ post }) => {
+    const openNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener, noreferrer');
+        if (newWindow) newWindow.opener = null;
+    }
 
-const Card = () => {
     return (
-        <div className="card">
+        <div className="card" onClick={() => openNewTab(post.link)}>
             <div className="card__image">
-                <img src={card} alt="card image" className="card__image-source" />
+                <img src={post.thumbnail} alt="card" className="card__image-source" />
             </div>
             <div className="card__content">
-                <h3>Title of this project or article</h3>
+                <h3>{post.title}</h3>
             </div>
         </div>
     )

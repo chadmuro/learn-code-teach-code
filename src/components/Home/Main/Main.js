@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Main.scss';
+import { MediumContext } from '../../../contexts/MediumContext';
 import Card from '../../Card/Card';
 
 const Main = () => {
+    const { posts, loading } = useContext(MediumContext);
+
+    console.log(posts, loading);
+
     return (
         <div className="main">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {posts && posts.map(post => {
+                return (
+                    <Card post={post} key={post.title}/>
+                )
+            })}
         </div>
     )
 }
