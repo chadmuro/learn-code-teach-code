@@ -1,7 +1,10 @@
 import React from 'react';
+import PageHero from '../../layout/PageHero/PageHero';
 
 const Projects = () => {
-	return <div>Projects</div>;
+	return (
+		<PageHero title="Projects"/>
+	)
 };
 
 export default Projects;
