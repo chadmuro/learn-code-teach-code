@@ -1,7 +1,5 @@
 import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
-// import Parser from 'rss-parser';
-// let parser = new Parser();
 
 export const MediumContext = createContext();
 
