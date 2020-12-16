@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import './Main.scss';
+import './ArticleMain.scss';
 import { MediumContext } from '../../../contexts/MediumContext';
-import Card from '../../Card/Card';
+import Card from '../../Pages/Card/Card';
 
-const Main = () => {
+const ArticleMain = () => {
     const { posts, loading } = useContext(MediumContext);
 
     console.log(posts, loading);
@@ -19,4 +19,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default ArticleMain;
