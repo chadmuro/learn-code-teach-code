@@ -14,3 +14,16 @@ button {
         outline: none;
     }
 }
+
+.title {
+    font-size: 2rem;
+}
+
+.button-link {
+    color: $color-three;
+    transition: all 0.3s;
+
+    &:hover {
+        color: $color-five;
+    }
+}

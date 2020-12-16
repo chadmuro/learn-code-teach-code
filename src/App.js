@@ -2,8 +2,8 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home/Home';
 import Articles from './components/Articles/Articles';
 import Projects from './components/Projects/Projects';
-import Header from './layout/Header/Header';
-import Footer from './layout/Footer/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import MediumContextProvider from './contexts/MediumContext';
 import './App.scss';
 

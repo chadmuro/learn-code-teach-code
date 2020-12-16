@@ -1,6 +1,6 @@
 import React from 'react';
-import PageHero from '../../layout/PageHero/PageHero';
-import ArticleMain from '../../layout/ArticleMain/ArticleMain';
+import PageHero from '../Pages/PageHero/PageHero';
+import ArticleMain from './ArticleMain/ArticleMain';
 
 const Articles = () => {
 	return (

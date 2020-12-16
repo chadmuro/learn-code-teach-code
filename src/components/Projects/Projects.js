@@ -1,5 +1,5 @@
 import React from 'react';
-import PageHero from '../../layout/PageHero/PageHero';
+import PageHero from '../Pages/PageHero/PageHero';
 
 const Projects = () => {
 	return (

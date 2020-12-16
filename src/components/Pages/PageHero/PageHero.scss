@@ -1,7 +1,7 @@
-@import '../../sass/variables.scss';
+@import '../../../sass/variables.scss';
 
 .pagehero {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../img/lctc-hero.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../../../img/lctc-hero.jpg');
     background-size: cover;
     background-position: top;
     height: 400px;
